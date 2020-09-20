@@ -12,7 +12,7 @@ function Navbar() {
 
     const showButton = () => {
         if(window.innerWidth <= 960) {
-          setButton(false);  
+            setButton(false);  
         } else {
             setButton(true);
         }  
@@ -32,32 +32,27 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
+                        <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+                         Home   
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
                         <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
                          About Us   
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/our-purpose' className='nav-links' onClick={closeMobileMenu}>
-                         Our Purpose   
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/staff' className='nav-links' onClick={closeMobileMenu}>
-                         Staff   
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='/gallery' className='nav-links' onClick={closeMobileMenu}>
                          Gallery   
                         </Link>
-                    </li>
+                    </li>                    
                     <li className='nav-item'>
                         <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
                          Contact Us   
                         </Link>
-                    </li>
+                    </li>                    
                 </ul> 
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                {button && <Button buttonStyle='btn--outline'>Donate</Button>}
             </div>
          </nav>
         </>
