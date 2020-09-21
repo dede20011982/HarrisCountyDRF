@@ -1,0 +1,12 @@
+   .hero-container {
+    /*background-image: url('public/assets/flagofusa.gif') center center/cover no-repeat;*/
+    /*Background image within the Hero component isn't working, I need to figure this part out*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
