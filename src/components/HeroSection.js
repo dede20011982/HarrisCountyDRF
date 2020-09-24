@@ -5,8 +5,7 @@ import '../App.css';
 
 function HeroSection() {
     return (
-        <div className='hero-container'>
-            <img src="public\assets\flagofusa.gif" alt=""/>
+        <div className='hero-container'>            
             <h1>Harris County Deputies Relief Fund Inc.</h1>
             <p>"We take care of our own"</p>
             <div className="hero-btns">
