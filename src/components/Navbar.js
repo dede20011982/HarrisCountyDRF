@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+//import Navbar from 'react-bootstrap/Navbar'
 import { Button } from './Button';
 
 function Navbar() {
@@ -28,9 +29,18 @@ function Navbar() {
         <>
          <nav className="navbar">
             <div className="navbar-container">
+                {/* <Navbar.Brand href="#home">
+                    <img
+                        src="/public/assets/logo.png"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="HCDRF logo"
+                    />
+                </Navbar.Brand> */}
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     Harris County DRF Inc. <i className='fab fa-typo3' />
-                </Link>                                
+                </Link>                                 
                  <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
