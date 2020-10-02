@@ -38,32 +38,32 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
             <Link to="/">Support</Link>
-            <Link to="/">Events</Link>
+            <Link to="/">Deputy Depot</Link>
             <Link to="/">Sponsorships</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">Facebook</Link>
+            <Link to='https://www.facebook.com/DeputiesReliefFund/'>Facebook</Link>
           </div>
         </div>
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link to='https://www.facebook.com/DeputiesReliefFund/' target="_blank" className="social-logo">
               Harris County DRF Inc.
               <i class="fab fa-typo3" />
             </Link>
           </div>
           <small class="website-rights">
-            Harris County Deputies Relief Fund © 2020
+            Harris County Deputies Relief Fund &copy; 2020
           </small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
-              to="/"
+              to='https://www.facebook.com/DeputiesReliefFund/'
               target="_blank"
               aria-label="Facebook"
             >
