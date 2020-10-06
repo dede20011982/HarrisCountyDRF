@@ -8,28 +8,31 @@ function Cards() {
             <h1>Our Purpose</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
-                    <ul className="cards__items">
+                    {/* <ul className="cards__items">
                         <CardItem 
                         src="assets/deputies.jpg"
                         text="blah blah blah"                       
                         />
                         <CardItem 
-                        src="assets/bg-masthead.jpg"
+                        src="assets/family.jpg"
                         text="blah blah blah"                        
                         />
-                    </ul>
+                    </ul> */}
                     <ul className="cards__items">
                         <CardItem 
                         src="assets/disaster.jpg"
-                        text="Disater Support"                       
+                        text="Disaster Support"
+                        path='/about-us'                       
                         />
                         <CardItem 
                         src="assets/injury.png"
-                        text="Injury Support"                        
+                        text="Injury Support"
+                        path='/about-us'                        
                         />
                          <CardItem 
-                        src="assets/family.jpg"
-                        text="Family Support"                        
+                        src="assets/bg-masthead.jpg"
+                        text="Family Support"
+                        path='/about-us'                        
                         />
                     </ul>
                 </div>

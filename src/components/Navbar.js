@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+//import Modal from 'react-modal';
+import { NavbarBrand } from "reactstrap";
 import { Button } from './Button';
 
 function Navbar() {
@@ -9,6 +11,8 @@ function Navbar() {
     //Bar Function turns bar to an X(cancel) reversing state
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false)
+
+    
 
     const showButton = () => {
         if(window.innerWidth <= 960) {
@@ -37,15 +41,23 @@ function Navbar() {
                         alt="HCDRF logo"
                     />
                 </Navbar.Brand> */}
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <NavbarBrand className="mr-auto" href="/">
+                    <img
+                        src="/assets/logo.png"
+                        height="200"
+                        width="200"
+                        alt="HCDRF logo"
+                    />
+                </NavbarBrand> 
+                {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     Harris County DRF Inc. <i className='fab fa-typo3' />
-                </Link>                                 
+                </Link>                                  */}
                  <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                          Home   
                         </Link>
                     </li>

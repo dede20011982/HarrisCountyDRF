@@ -9,7 +9,7 @@
   .about-us,
   .gallery,
   .contact-us,
-  .sign-in {
+  .business-supporters {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -18,7 +18,7 @@
   }  
   
   .about-us {
-    background-image: url('/');
+    background-image: url('/public/assets/bg1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   }
   
   .gallery {
-    background-image: url('/');
+    background-image: url('/public/assets/bg2.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -36,19 +36,18 @@
   }
   
   .contact-us {
-    background-image: url('/');
+    background-image: url('/public/assets/bg1.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
-  }
-  
-  
-  .sign-in {
-    background-image: url('/');
+  }  
+
+  .business-supporters {
+    background-image: url('/public/assets/bg1.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
