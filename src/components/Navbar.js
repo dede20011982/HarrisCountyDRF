@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 //import Modal from 'react-modal';
 import { NavbarBrand } from "reactstrap";
-import { Button } from './Button';
+//import { Button } from './Button';
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const[button, setButton] =useState(true)
-    //Bar Function turns bar to an X(cancel) reversing state
+    const[/*button*/, setButton] =useState(true)
+    
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false)
 
@@ -31,16 +31,7 @@ function Navbar() {
     return (
         <>
          <nav className="navbar">
-            <div className="navbar-container">
-                {/* <Navbar.Brand href="#home">
-                    <img
-                        src="/public/assets/logo.png"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                        alt="HCDRF logo"
-                    />
-                </Navbar.Brand> */}
+            <div className="navbar-container">                
                 <NavbarBrand className="mr-auto" href="/">
                     <img
                         src="/assets/logo.png"
@@ -75,9 +66,9 @@ function Navbar() {
                         <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
                          Contact Us   
                         </Link>
-                    </li>                    
-                </ul> 
-                {button && <Button buttonStyle='btn--outline'>Sign-In</Button>}
+                    </li>                                        
+                </ul>                 
+                {/* {button && <Button buttonStyle='btn--outline'>Sign-In</Button>} */}
             </div>
          </nav>
         </>

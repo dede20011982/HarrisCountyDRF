@@ -10,7 +10,7 @@ function HeroSection() {
             <p>"We take care of our own"</p>
             <div className="hero-btns">
                 <Button
-                    className='btns'
+                    className='btns1'
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
                 >

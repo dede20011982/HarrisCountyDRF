@@ -28,7 +28,7 @@ function Footer() {
           <div class="footer-link-items">
             <h2>About Us</h2>
             <Link to="/sign-up">For Updated Events</Link>
-            <Link to="/">Our Purpose</Link>
+            <Link to="/about-us">Our Purpose</Link>
             <Link to="/">Our Staff</Link>
             <Link to="/">Terms of Service</Link>
           </div>
@@ -36,8 +36,8 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
+            <Link to="/contact-us">Contact</Link>
+            <Link to="/business-supporters">Support</Link>
             <Link to="/">Deputy Depot</Link>
             <Link to="/">Sponsorships</Link>
           </div>
@@ -51,31 +51,31 @@ function Footer() {
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
-          <div className="footer-logo" href="/">
-            {/* <Link to='https://www.facebook.com/DeputiesReliefFund/' target="_blank" className="social-logo">
-              Harris County DRF Inc.
+          <div className="footer-logo" to="/">
+             {/* <Link to='https://www.facebook.com/DeputiesReliefFund/' target="_blank" className="social-logo">
+              Harris County Deputies Relief Fund Inc.
               <i class="fab fa-typo3" />
-            </Link> */}
-              <img
+            </Link>  */}
+              {/* <img
                 src="/assets/logo.png"
                 height="130"
                 width="130"
                 alt="HCDRF logo"
-              />
+              /> */}
           </div>
           <small class="website-rights">
             Harris County Deputies Relief Fund &copy; 2020
           </small>
-          <div class="social-icons">
+          {/* <div class="social-icons">
             <Link
               class="social-icon-link facebook"
               to='https://www.facebook.com/DeputiesReliefFund/'
-              target="_blank"
+              //target="_blank"
               aria-label="Facebook"
             >
               <i class="fab fa-facebook-f" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

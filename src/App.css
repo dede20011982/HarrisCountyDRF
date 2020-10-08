@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
  *{
     box-sizing: border-box;
     margin: 0;
@@ -34,23 +35,33 @@
     color: #fff;
     font-size: 100px;
   }
-  
-  .contact-us {
-    background-image: url('/public/assets/bg1.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }  
 
-  .business-supporters {
-    background-image: url('/public/assets/bg1.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+  .contactBlock .ant-form {    
+    max-width: 640px;
+    margin: auto;
+    padding-top: 10px;
+    
+  }
+  
+  .contactBlock .ant-form textarea {
+    min-height: 120px;
+    height: 120px;
+  }
+
+  .titleHolder {
+    text-align: center;
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 40px;
+    padding-top: 100px;
+  }
+
+  .mobileVisible {
+    display: none;
+  }
+  
+  .mobileHidden {
+    display: block;
   }
 
   
