@@ -1,15 +1,16 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
+import Footer from '../Footer';
 import '../../App.css';
 
 const { TextArea } = Input;
 
 function ContactUs() {
-  return (
+  return (     
     <div id="contact" className="block contactBlock">
       <div className="container-fluid">
         <div className="titleHolder">
-          <h2>Contact Us</h2>
+          <h1>Contact Us</h1>
           <p></p>
         </div>
         <Form
@@ -77,8 +78,9 @@ function ContactUs() {
           </Form.Item>
         </Form>
       </div>
-    </div>  
-  );
+        <Footer />
+    </div>     
+  );  
 }
 
 export default ContactUs;

@@ -30,7 +30,7 @@ function Footer() {
             <Link to="/sign-up">For Updated Events</Link>
             <Link to="/about-us">Our Purpose</Link>
             <Link to="/">Our Staff</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to="/">Resources</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">

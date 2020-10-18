@@ -1,6 +1,13 @@
 import React from 'react';
+import Footer from '../Footer';
 import '../../App.css';
 
-export default function BusinessSupporters() {
-    return <h1 className='business-supporters'>BUSINESS SUPPORTERS</h1>;
-}
+function BusinessSupporters () {
+    return (
+        <>
+            <Footer />
+        </>
+    );
+  }  
+
+export default BusinessSupporters;

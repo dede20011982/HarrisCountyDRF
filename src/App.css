@@ -7,8 +7,7 @@
   }
   
   .home,
-  .about-us,
-  .gallery,
+  .about-us,  
   .contact-us,
   .business-supporters {
     display: flex;
@@ -19,7 +18,7 @@
   }  
   
   .about-us {
-    background-image: url('/public/assets/bg1.jpg');
+    background: url('/assets/bg2.jpg') center center no-repeat;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,20 +26,19 @@
     font-size: 100px;
   }
   
-  .gallery {
+  /* .gallery {
     background-image: url('/public/assets/bg2.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
-  }
+  } */
 
   .contactBlock .ant-form {    
     max-width: 640px;
     margin: auto;
-    padding-top: 10px;
-    
+    padding-top: 10px;    
   }
   
   .contactBlock .ant-form textarea {
@@ -53,7 +51,7 @@
     position: relative;
     padding: 0 0 20px;
     margin: 0 0 40px;
-    padding-top: 100px;
+    padding-top: 75px;
   }
 
   .mobileVisible {
@@ -63,8 +61,3 @@
   .mobileHidden {
     display: block;
   }
-
-  
-  
-  
-  

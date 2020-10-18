@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-//import Modal from 'react-modal';
 import { NavbarBrand } from "reactstrap";
-//import { Button } from './Button';
+import { Button } from './Button';
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const[/*button*/, setButton] =useState(true)
+    const[button, setButton] =useState(true)
     
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false)
@@ -68,7 +67,7 @@ function Navbar() {
                         </Link>
                     </li>                                        
                 </ul>                 
-                {/* {button && <Button buttonStyle='btn--outline'>Sign-In</Button>} */}
+                 <Button buttonStyle='btn--outline'>Sign-In</Button>
             </div>
          </nav>
         </>
